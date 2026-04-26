@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact placeholder</title>
+  <title>Contact - Internet Addiction</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to Content</a>
 <header>
-  <h1>My Website</h1>
+  <h1>Contact</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -18,14 +19,57 @@
   </nav>
 </header>
 
-<main>
-  <h2>Home</h2>
-  <p>Content goes here</p>
+<main id="main-content">
+  <h2>Internet Addiction Self-Assessment</h2>
+
+  <form id="quizForm">
+
+    <label>How many hours do you spend online daily?</label>
+    <select id="q1">
+      <option value="0">Less than 2 hours</option>
+      <option value="1">2–5 hours</option>
+      <option value="2">More than 5 hours</option>
+    </select>
+
+    <label>Do you lose track of time while online?</label>
+    <select id="q2">
+      <option value="0">Rarely</option>
+      <option value="1">Sometimes</option>
+      <option value="2">Often</option>
+    </select>
+
+    <label>Do you feel anxious when not online?</label>
+    <select id="q3">
+      <option value="0">No</option>
+      <option value="1">Sometimes</option>
+      <option value="2">Yes</option>
+    </select>
+
+    <label>Does internet use affect your sleep?</label>
+    <select id="q4">
+      <option value="0">No</option>
+      <option value="1">Sometimes</option>
+      <option value="2">Yes</option>
+    </select>
+
+    <button type="submit">See Results</button>
+
+  </form>
+
+  <div id="resultBox"></div>
+</main>
+  
+
+ 
+
+  
+    
+ 
 </main>
 
 <footer>
-  <p>© 2026</p>
+    <p>© 2026</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
