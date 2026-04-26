@@ -7,14 +7,15 @@ header {
   background-color: #21d639;
   color: white;
   text-align: center;
+
+    .special {
+      text-indent: 40px;
+      Color: white;
+      text-align: left;
+}
 }
 
-.special {
-  text-indent: 40px;
-  color: white;
-  background-color: #21d639;
-  text-align: left;
-}
+
   
 
 nav a {
