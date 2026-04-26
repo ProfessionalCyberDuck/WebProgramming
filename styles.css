@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #21d639;
   color: white;
   text-align: center;
   padding: 10px;
@@ -13,9 +13,8 @@ header {
 .special {
   text-indent: 40px;
   color: white;
-  background-color: #333;
+  background-color: #21d639;
   text-align: left;
-  padding: 10px;
 }
   
 
