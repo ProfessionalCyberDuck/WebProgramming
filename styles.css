@@ -10,6 +10,12 @@ header {
   padding: 10px;
 }
 
+.special {
+  text-indent: 40px;
+  color: white;
+  
+}
+
 nav a {
   color: white;
   margin: 0 10px;
