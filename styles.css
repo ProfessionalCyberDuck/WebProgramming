@@ -13,8 +13,11 @@ header {
 .special {
   text-indent: 40px;
   color: white;
-  
+  background-color: #333;
+  text-align: left;
+  padding: 10px;
 }
+  
 
 nav a {
   color: white;
