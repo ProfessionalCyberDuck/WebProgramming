@@ -104,7 +104,8 @@ main {
   margin: 20px auto;
 }
 
-.form-box label {
+.form-box label,
+.form-box p{
   display: block;
   margin-top: 15px;
   font-weight: bold;
@@ -133,13 +134,36 @@ main {
   background: #18b82d;
 }
 
-.result-box {
+ .result-box  {
   margin-top: 20px;
   padding: 15px;
   border-radius: 12px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.invalid {
+  border: 2px solid #e74c3c !important;
+  background-color: #ffe6e6;
+  animation: shake 0.25s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #0077cc;
+  transition: 0.2s ease;
 }
 
 

@@ -33,55 +33,123 @@
       <h2>Internet Addiction Self-Assessment</h2>
       <p>Answer the questions below to get a general idea of your internet usage habits.</p>
     </section>
+      <section class="content">
 
-    <section class="content">
+    <form id="quizForm" class="form-box" novalidate>
 
-      <form id="quizForm" class="form-box">
+   
+      <label for="q1">How many hours do you spend online daily?</label>
+      <select id="q1" required>
+        <option value="" disabled selected>Select</option>
+        <option value="0">Less than 3 hours</option>
+        <option value="1">3–6 hours</option>
+        <option value="2">More than 6 hours</option>
+      </select>
 
-        <label>How many hours do you spend online daily?</label>
-        <select id="q1">
-          <option value="0">Less than 2 hours</option>
-          <option value="1">2–5 hours</option>
-          <option value="2">More than 5 hours</option>
-        </select>
+     
+      <div class="radio-group" id="q2Group">
+        <p>Do you lose track of time while online?</p>
+        <label><input type="radio" name="q2" value="0"> Rarely</label>
+        <label><input type="radio" name="q2" value="1"> Sometimes</label>
+        <label><input type="radio" name="q2" value="2"> Often</label>
+      </div>
 
-        <label>Do you lose track of time while online?</label>
-        <select id="q2">
-          <option value="0">Rarely</option>
-          <option value="1">Sometimes</option>
-          <option value="2">Often</option>
-        </select>
+      <div class="radio-group" id="q3Group">
+        <p>Do you feel anxious when you are offline?</p>
+        <label><input type="radio" name="q3" value="0"> No</label>
+        <label><input type="radio" name="q3" value="1"> Sometimes</label>
+        <label><input type="radio" name="q3" value="2"> Yes</label>
+      </div>
 
-        <label>Do you feel anxious when not online?</label>
-        <select id="q3">
-          <option value="0">No</option>
-          <option value="1">Sometimes</option>
-          <option value="2">Yes</option>
-        </select>
+      
+      <label for="q4">Does internet usage affect your sleep?</label>
+      <select id="q4" required>
+        <option value="" disabled selected>Select</option>
+        <option value="0">No</option>
+        <option value="1">Sometimes</option>
+        <option value="2">Yes</option>
+      </select>
 
-        <label>Does internet use affect your sleep?</label>
-        <select id="q4">
-          <option value="0">No</option>
-          <option value="1">Sometimes</option>
-          <option value="2">Yes</option>
-        </select>
+     
+      <p>What type of behavior do you display</p>
 
-        <button type="submit">See Results</button>
+      <label>
+        <input type="checkbox" id="habitNone" name="habits">
+        None of these apply
+      </label>
 
-      </form>
+      <label>
+        <input type="checkbox" class="habitOption" name="habits">
+        Staying late online
+      </label>
 
-      <div id="resultBox" class="result-box"></div>
+      <label>
+        <input type="checkbox" class="habitOption" name="habits">
+        Skipping responsibilities
+      </label>
 
-    </section>
+      <label>
+        <input type="checkbox" class="habitOption" name="habits">
+        Avoiding social interaction
+      </label>
 
-  </main>
+      <button type="submit">See Results</button>
 
+      <p id="quizMessage"></p>
+
+    </form>
+
+    <div id="resultBox" class="result-box"></div>
+
+  </section>
+  
+  <section class="content">
+
+    <h2>Request Help (Optional)</h2>
+
+    <form id="contactForm" class="form-box" novalidate>
+
+      <label for="contactName">Name *</label>
+      <input type="text" id="contactName" required>
+
+      <label for="contactEmail">Email *</label>
+      <input type="email" id="contactEmail" required>
+
+      <label for="reason">Reason *</label>
+      <select id="reason" required>
+        <option value="" disabled selected>Select</option>
+        <option value="help">Need help</option>
+        <option value="question">Question</option>
+      </select>
+
+      <label for="message">Message (optional)</label>
+      <textarea id="message" rows="4"></textarea>
+
+      <label>
+        <input type="checkbox" id="consent" required>
+        I agree to be contacted *
+      </label>
+
+      <button type="submit">Send Request</button>
+
+      <p id="contactMessage" role="alert"></p>
+
+    </form>
+
+  </section>
+
+</main>
+    
   <footer>
     <div class="container">
-      <p>© 2026 Organization Name</p>
+      <p>Last Updated: April 2026</p>
+      <p>Contact: hr@internetAddictionHelp.com</p>
+      <p>&copy; 2026 Internet Addiction Help Center</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+ 
