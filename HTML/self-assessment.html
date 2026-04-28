@@ -2,76 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact - Internet Addiction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Assessment</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+  <a href="#maincontent" class="skip">Skip to Content</a>
+  <a href="accessibility.html" class="skip">Accessibility Statement</a>
+
   <header>
-    <a href="#maincontent" class="skip">Skip to Content</a>
-    <a href="accessibility.html" class="skip">Accessibility Statement</a>
-    <h1>My Website</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="addiction.html">What Is Internet Addiction?</a>
-      <a href="signs.html">Signs, Symptoms, & Risk Factors</a>
-      <a href="prevention.html">Prevention, Healthy Habits, & Support</a>
-      <a href="resources.html">Resources & Contact</a>
-      <a href="self-assessment.html">Self-Assessment</a>
-    </nav>
+    <div class="container">
+      <h1>Internet Addiction Resource Center</h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="addiction.html">What Is It?</a>
+        <a href="signs.html">Signs & Symptoms</a>
+        <a href="prevention.html">Prevention</a>
+        <a href="resources.html">Resources</a>
+        <a href="self-assessment.html">Self-Assessment</a>
+      </nav>
+    </div>
   </header>
 
-<main id="main-content">
-  <h2>Internet Addiction Self-Assessment</h2>
+  <main id="maincontent" class="container">
 
-  <form id="quizForm">
+    <section class="hero">
+      <h2>Internet Addiction Self-Assessment</h2>
+      <p>Answer the questions below to get a general idea of your internet usage habits.</p>
+    </section>
 
-    <label>How many hours do you spend online daily?</label>
-    <select id="q1">
-      <option value="0">Less than 2 hours</option>
-      <option value="1">2–5 hours</option>
-      <option value="2">More than 5 hours</option>
-    </select>
+    <section class="content">
 
-    <label>Do you lose track of time while online?</label>
-    <select id="q2">
-      <option value="0">Rarely</option>
-      <option value="1">Sometimes</option>
-      <option value="2">Often</option>
-    </select>
+      <form id="quizForm" class="form-box">
 
-    <label>Do you feel anxious when not online?</label>
-    <select id="q3">
-      <option value="0">No</option>
-      <option value="1">Sometimes</option>
-      <option value="2">Yes</option>
-    </select>
+        <label>How many hours do you spend online daily?</label>
+        <select id="q1">
+          <option value="0">Less than 2 hours</option>
+          <option value="1">2–5 hours</option>
+          <option value="2">More than 5 hours</option>
+        </select>
 
-    <label>Does internet use affect your sleep?</label>
-    <select id="q4">
-      <option value="0">No</option>
-      <option value="1">Sometimes</option>
-      <option value="2">Yes</option>
-    </select>
+        <label>Do you lose track of time while online?</label>
+        <select id="q2">
+          <option value="0">Rarely</option>
+          <option value="1">Sometimes</option>
+          <option value="2">Often</option>
+        </select>
 
-    <button type="submit">See Results</button>
+        <label>Do you feel anxious when not online?</label>
+        <select id="q3">
+          <option value="0">No</option>
+          <option value="1">Sometimes</option>
+          <option value="2">Yes</option>
+        </select>
 
-  </form>
+        <label>Does internet use affect your sleep?</label>
+        <select id="q4">
+          <option value="0">No</option>
+          <option value="1">Sometimes</option>
+          <option value="2">Yes</option>
+        </select>
 
-  <div id="resultBox"></div>
-</main>
-  
+        <button type="submit">See Results</button>
 
- 
+      </form>
 
-  
-    
- 
-</main>
+      <div id="resultBox" class="result-box"></div>
 
-<footer>
-    <p>© 2026</p>
-</footer>
-<script src="script.js"></script>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Organization Name</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
