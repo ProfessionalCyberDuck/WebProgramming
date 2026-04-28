@@ -9,15 +9,37 @@ header {
   text-align: center;
 }
 
-.special {
-  text-indent: 40px;
-  color: white;
-  background-color: #21d639;
-  text-align: left;
-  margin-bottom: 0em;
-  padding-bottom: 0cm;
+nav {
+  text-align: center;
+  padding: 10px 0;
 }
-  
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode header,
+.dark-mode nav {
+  background-color: #111;
+}
+
+.dark-mode a {
+  color: lightblue;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  background-color: #21d639;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 0;
+}
 
 nav a {
   color: white;
