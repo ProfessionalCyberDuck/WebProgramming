@@ -3,7 +3,12 @@ body {
   margin: 0;
   background-color:powderblue;
 }
-
+body, input, select, textarea {
+		color: rgba(255, 255, 255, 0.55);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16.5pt;
+		font-weight: normal;
+}		
 header {
   background: linear-gradient(90deg, #21d639, #18b82d);
   color: white;
@@ -31,21 +36,20 @@ nav {
   color: lightblue;
 }
 
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 10px;
-  background: #21d639;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: top 0.2s ease;
+.skip {
+  position: left;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 
-.skip-link:focus {
-  top: 10px;
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }
 
 nav a {
