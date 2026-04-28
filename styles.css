@@ -1,12 +1,15 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  background-color:powderblue;
 }
 
 header {
-  background-color: #21d639;
+  background: linear-gradient(90deg, #21d639, #18b82d);
   color: white;
   text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav {
@@ -30,15 +33,19 @@ nav {
 
 .skip-link {
   position: absolute;
-  left: -999px;
-  background-color: #21d639;
+  top: -40px;
+  left: 10px;
+  background: #21d639;
   color: white;
   padding: 10px;
   text-decoration: none;
+  border-radius: 5px;
+  transition: top 0.2s ease;
 }
 
+
 .skip-link:focus {
-  left: 0;
+  top: 10px;
 }
 
 nav a {
